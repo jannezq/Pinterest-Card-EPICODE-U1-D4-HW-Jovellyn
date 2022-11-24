@@ -17,7 +17,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 15vh;
-    box-shadow: 0 10px 20px rgb(0, 0, 0, 40%);
+
     transition: all 1s;
 }
 
@@ -34,6 +34,8 @@ body {
     width: 550px;
     height: 750px;
     border-radius: 34px;
+    box-shadow: 0 10px 20px rgb(0, 0, 0, 40%);
+
 }
 
 .pintrest-card:hover .overlay-colour {
