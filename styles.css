@@ -13,6 +13,15 @@ body {
     margin-right: auto;
     margin-top: 15vh;
     box-shadow: 0 10px 20px rgb(0, 0, 0, 40%);
+    transition: ;
+}
+
+.pintrest-card:hover .overlay-colour {
+    position: absolute;
+    background-color: #000000;
+    opacity: .2;
+    width: 100%;
+    height: 100%;
 }
 
 .pintrest-card-img img {
@@ -21,13 +30,7 @@ body {
     height: 100%;
 }
 
-.overlay-colour {
-    position: absolute;
-    background-color: #000000;
-    opacity: .3;
-    width: 100%;
-    height: 100%;
-}
+
 
 .save-button {
     position: absolute;
@@ -35,10 +38,16 @@ body {
     width: 130px;
     height: 90px;
     margin-top: 20px;
-    top: 0;
+    transform: translateY(-120px);
     right: 5%;
     border-radius: 550px;
 }
+
+.pintrest-card:hover .save-button {
+    transform: translateY(0);
+}
+
+
 
 .save-button-text {
     position: absolute;
@@ -53,10 +62,17 @@ body {
     width: 332px;
     height: 67px;
     background-color: #e9e9e9;
-    bottom: 20px;
+    /* bottom: 20px; */
     left: 20px;
     border-radius: 550px;
     opacity: 0.8;
+    transform: translateY(-130px);
+}
+
+.pintrest-card:hover .arrow-img {
+    transform: translateY(0);
+    bottom: 20px;
+    left: 20px;
 }
 
 .arrow-img img {
@@ -85,14 +101,50 @@ body {
     position: absolute;
     width: 67px;
     height: 67px;
-    bottom: 22px;
+    /* bottom: -100px; */
+    transform: translateY(-130px);
     right: 112px;
     border-radius: 50%;
     background-color: #e9e9e9;
     opacity: 0.8;
 }
 
+.pintrest-card:hover .download-button {
+    transform: translateY(0);
+    bottom: 22px;
+    right: 112px;
+}
+
 .download-button img {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.more-button {
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    /* bottom: -100px; */
+    transform: translateY(-130px);
+    right: 25px;
+    border-radius: 50%;
+    background-color: #e9e9e9;
+    opacity: 0.8;
+}
+
+.pintrest-card:hover .more-button {
+    transform: translateY(0);
+    bottom: 22px;
+    right: 25px;
+}
+
+.more-button img {
     position: absolute;
     width: 75%;
     height: 75%;
