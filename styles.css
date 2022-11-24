@@ -6,18 +6,18 @@ body {
 .pintrest-card {
     position: relative;
     overflow: hidden;
+    /* for normal shape */
     width: 550px;
     height: 750px;
     border-radius: 34px;
 
-    /* From round shape to large
+    /* From round shape to large  
     width: 500px;
     height: 500px;
-    border-radius: 50%; */
+    border-radius: 50%;*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 15vh;
-
     transition: all 1s;
 }
 
