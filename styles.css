@@ -13,13 +13,22 @@ body {
     margin-right: auto;
     margin-top: 15vh;
     box-shadow: 0 10px 20px rgb(0, 0, 0, 40%);
-    transition: ;
+
+}
+
+.overlay-colour {
+    position: absolute;
+    background-color: #161d24;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
 }
 
 .pintrest-card:hover .overlay-colour {
     position: absolute;
-    background-color: #000000;
-    opacity: .2;
+    background-color: #161d24;
+    opacity: .3;
     width: 100%;
     height: 100%;
 }
@@ -41,6 +50,7 @@ body {
     transform: translateY(-120px);
     right: 5%;
     border-radius: 550px;
+    transition: transform 1s;
 }
 
 .pintrest-card:hover .save-button {
@@ -62,11 +72,12 @@ body {
     width: 332px;
     height: 67px;
     background-color: #e9e9e9;
-    /* bottom: 20px; */
+    bottom: 20px;
     left: 20px;
     border-radius: 550px;
     opacity: 0.8;
-    transform: translateY(-130px);
+    transform: translateY(200px);
+    transition: transform 1s;
 }
 
 .pintrest-card:hover .arrow-img {
@@ -101,12 +112,13 @@ body {
     position: absolute;
     width: 67px;
     height: 67px;
-    /* bottom: -100px; */
-    transform: translateY(-130px);
+    bottom: -100px;
     right: 112px;
     border-radius: 50%;
     background-color: #e9e9e9;
     opacity: 0.8;
+    transform: translateY(200px);
+    transition: transform 1s;
 }
 
 .pintrest-card:hover .download-button {
@@ -130,12 +142,13 @@ body {
     position: absolute;
     width: 67px;
     height: 67px;
-    /* bottom: -100px; */
-    transform: translateY(-130px);
+    bottom: -100px;
     right: 25px;
     border-radius: 50%;
     background-color: #e9e9e9;
     opacity: 0.8;
+    transform: translateY(200px);
+    transition: transform 1s;
 }
 
 .pintrest-card:hover .more-button {
